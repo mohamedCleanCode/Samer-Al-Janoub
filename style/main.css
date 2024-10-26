@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Start Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* End Google Fonts */
+
+/* Start Background Animation */
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  position: fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
+.wrapper div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+}
+div .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.wrapper div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.wrapper div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+/* End Background Animation */
+
+/* Start Contacts */
+.contacts {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+.contacts div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contacts a {
+  display: inline-block;
+}
+.contacts a img {
+  width: 70px;
+  height: 70px;
+  transition: all ease 0.5s;
+}
+.contacts a:hover img {
+  transform: scale(1.1);
+}
+/* End Contacts */
+
+/* Start Hero Section */
+header {
+  position: relative;
+  z-index: 1000;
+}
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 10px !important;
+  }
+}
+.hero-section .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000006c;
+  z-index: 1;
+}
+.hero-section {
+  height: 100vh;
+  position: relative;
+}
+.hero-section .carousel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heading {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.heading h1 {
+  font-size: 80px;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+}
+.heading h2 {
+  font-size: 70px;
+  line-height: 2;
+  color: transparent;
+  text-align: left;
+  -webkit-text-stroke: 1px #fff;
+}
+.heading p {
+  line-height: 2;
+  color: #fff;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .heading h1 {
+    font-size: 20px;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+.heading .contact {
+  margin: 50px 0;
+  text-align: left;
+}
+.heading .contact a {
+  font-size: 25px;
+  padding: 15px 30px;
+  background-color: transparent;
+  border-radius: 25px;
+  width: 280px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+@media (max-width: 767px) {
+  .heading .contact a {
+    font-size: 10px;
+  }
+}
+.heading .contact a:hover {
+  background-color: white;
+  color: #000;
+}
+/* End Hero Section */
+
+/* Start Gallery Section */
+.gallery-section {
+  width: 100%;
+}
+.gallery-section div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery-section img {
+  border-radius: 30px;
+  transition: all ease 0.5s;
+}
+.gallery-section img:hover {
+  transform: scale(1.1);
+}
+.gallery-section img {
+  width: 700px;
+  height: 650px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .gallery-section img {
+    width: 300px;
+  }
+}
+/* End Gallery Section */
+
+/* Start Videos Section */
+.videos-section {
+  width: 100%;
+  height: 50vh;
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+.videos-section .carousel .carousel-inner {
+  text-align: center;
+}
+.videos-section video {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+/* End Videos Section */
