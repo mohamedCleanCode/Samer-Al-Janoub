@@ -410,4 +410,11 @@ header {
   height: 500px;
   margin: auto;
 }
+@media (max-width: 767px) {
+  .videos-section video {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+}
 /* End Videos Section */
