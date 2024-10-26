@@ -407,7 +407,7 @@ header {
 }
 .videos-section video {
   width: 500px;
-  height: 500px;
+  height: 300px;
   margin: auto;
 }
 @media (max-width: 767px) {
